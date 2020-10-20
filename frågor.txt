@@ -1,0 +1,32 @@
+1. Man använder add för att lägga till sina filer i den lokala repositori 
+i Git index som är ett förstadie eller "platå" för det som är redo att bli commited. 
+Commit används för att anknyta filerna till index i lokala repository som då 
+blir klara att pushas till remote repo. 
+
+2. Pull används för att för att "hämta" ner från remote repository och ett sätt att
+synkronisera din lokala repository med "pushade"/"upstream" ändningar. 
+Push används för att "pusha"/"skicka" upp ändringar eller nya filer från lokala repo
+till rempore repo. 
+
+3. Log används för att se en logg över alla "Commits" som är gjorda. Status används
+för att se status över vilka filer som är "added" eller inte dvs vilka filer som ligger
+klara att bli "commited"
+
+4. Man kan antingen skriva ett kort commit-meddelande i git commit -m "..." eller 
+git commit följt av enter för att öppna upp text editor och skriva ett längre mer 
+beskrivande commit-meddelande.
+
+5. Ang att "rulla tillbaka" kod så finns är det lite upp till tolkning vad denna 
+frågan avser =). Man kan använda git reset för att ångra en commit eller add i den 
+lokala repon. Man kan också använda git revert för att ångra en commit på en public 
+branch.
+Man kan också använda sig av checkout på branches för att skapa en ny branch (git branch <namn>)
+eller (git checkout -b <namn> för att gå dit direkt)för att där göra ändringar och uppdateringar på sina filer utan att filerna ändras eller påverkas i main. Går man 
+sedan tillbaka till main (git checkout main) så "rullas" koden tillbaka till det läge
+där dom var, opåverkade.
+
+
+Ang betyget så känner jag mig inte bekväm med att säga att jag siktar på vg tex då jag 
+inte vill värdera mitt eget arbete. Jag har heller inte riktigt fått till mina Commits
+i den ordning som jag ville och som jag antar att du ville ha och därför har tex .gitignore filen commitats och pushats mer än en gång då jag gjorde ett slarvfel och 
+skapade den som .gitignore.txt först och var därför tvungen att spara om den och commit/pusha igen osv.      
